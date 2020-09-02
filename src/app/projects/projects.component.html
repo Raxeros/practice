@@ -1,0 +1,11 @@
+<div class="main">
+    <div class="title">
+    <a routerLink="/projects">Web<br>Projects</a>
+    <a routerLink="/services">Web<br>Services</a>
+    </div>
+    <div class="projects">
+    <a *ngFor="let project of projects"><img src="{{project.img_url}}">{{project.name}}<br>{{project.year}}</a>
+    </div>
+<router-outlet></router-outlet>   
+    </div>
+
